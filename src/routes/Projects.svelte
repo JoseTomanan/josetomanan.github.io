@@ -28,7 +28,7 @@
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:FastAPI", "simple-icons:SQLite"] }
 						{openValue}
 					/>
-      <Article title="I/O MONEY (Personal Financial Tracker)"
+      <Article title="I/O MONEY"
 						id="proj-finances"
 						href="https://josetomanan.github.io/money-sheet-monorepo"
 						subtitle="Frontend interface for Google Sheets"
