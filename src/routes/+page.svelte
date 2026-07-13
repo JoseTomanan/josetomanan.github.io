@@ -99,8 +99,8 @@
     <section class="section-body gap-4 rounded-b-none border-b border-border">
       <h2>About me</h2>
       <h4>
-        Hello! I am Jose, a <span class="non-link-highlight">CS student from UP Diliman</span> and a full-stack developer comfortable on both ends &mdash; clean UIs with Svelte5 &amp; React, bugless APIs with Django &amp; Spring Boot.
-        I am detail-driven; I write code that is
+        Hello! I am Jose, a <span class="non-link-highlight">BS CS graduate from UP Diliman</span> and a full-stack developer comfortable on both ends &mdash; clean UIs with Svelte5 &amp; React, bugless APIs with Django &amp; Spring Boot.
+        I graduated in July 2026 with Cum Laude honors, and am committed to my craft: I am detail-driven, and I write code that is
         <span class="non-link-highlight">as thoughtful as it is functional.</span>
       </h4>
     </section>
