@@ -99,7 +99,7 @@
     <section class="section-body gap-4 rounded-b-none border-b border-border">
       <h2>About me</h2>
       <h4>
-        Hello! I am Jose, a <span class="non-link-highlight">BS CS graduate from UP Diliman</span> and a full-stack developer comfortable on both ends &mdash; clean UIs with Svelte5 &amp; React, bugless APIs with Django &amp; Spring Boot.
+        Hello! I am Jose, a <span class="non-link-highlight">BS CS graduate from UP Diliman</span> and an AI-proficient full-stack developer, comfortable on both ends &mdash; clean UIs with Svelte5 &amp; React, bugless APIs with FastAPI &amp; Spring Boot.
         I graduated in July 2026 with Cum Laude honors, and am committed to my craft: I am detail-driven, and I write code that is
         <span class="non-link-highlight">as thoughtful as it is functional.</span>
       </h4>
@@ -129,7 +129,7 @@
   <div class="flex-1 flex flex-col leading-none *:text-muted-foreground/75">
     <h4 class="font-bold">Jose Tomanan</h4>
     <span class="inline-flex gap-x-2 items-center">
-      <IconEmail/> jdtomanan@up.edu.ph
+      <IconEmail/> tomananjose.work@gmail.com
     </span>
     <span class="inline-flex gap-x-2 items-center">
       <IconPhone/> +63 947 301 3664
