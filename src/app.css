@@ -15,16 +15,14 @@
 
 /* 2xl (Widescreen monitors) */
 @media (max-width: 1536px) {
-  .container,
-  footer {
+  .container {
     max-width: 1280px;
   }
 }
 
 /* xl (Modern laptops, desktops) */
 @media (max-width: 1280px) {
-  .container,
-  footer {
+  .container {
     max-width: 1024px;
   }
 }
@@ -45,16 +43,14 @@
 
 /* sm (Big phones, mini-tablets) */
 @media (max-width: 640px) {
-  .container,
-  footer {
+  .container {
     width: 100%;
   }
 }
 
 /* xs (Phones) */
 @media (max-width: 475px) {
-  .container,
-  footer {
+  .container {
     width: 100%;
   }
 }

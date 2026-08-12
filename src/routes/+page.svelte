@@ -122,43 +122,53 @@
 
 </main>
 
-<footer class="bg-muted/75 text-muted-foreground/75
-              flex flex-row w-full justify-between items-end
-              gap-y-2 h-64 mx-auto px-8 py-4 mt-16
+<footer class="w-full mt-16 bg-muted/75 border-t border-border">
+  <div class="w-full max-w-[960px] mx-auto px-6 py-10
+              flex flex-col gap-8
+              sm:flex-row sm:items-start sm:justify-between
             ">
-  <div class="flex-1 flex flex-col leading-none *:text-muted-foreground/75">
-    <h4 class="font-bold">Jose Tomanan</h4>
-    <span class="inline-flex gap-x-2 items-center">
-      <IconEmail/> jdtomanan@up.edu.ph
-    </span>
-    <span class="inline-flex gap-x-2 items-center">
-      <IconPhone/> +63 947 301 3664
-    </span>
-  </div>
-  <div class="flex-[1.5] lg:flex-[2]
-              flex flex-col sm:flex-row
-            ">
-    <a href="#top"
-        class="hoverable-link flex-1 w-full text-right sm:text-center">
-      Back to top
-    </a>
-    <div class="flex-1 inline-flex justify-end items-center
-                  gap-x-3 py-1
-                  *:rounded-lg *:text-muted-foreground *:h-fit
+    <div class="flex flex-col gap-y-1 leading-tight
+                *:text-muted-foreground/75">
+      <h4 class="font-bold">Jose Tomanan</h4>
+      <a href="mailto:jdtomanan@up.edu.ph"
+          class="hoverable-link inline-flex gap-x-2 items-center w-fit">
+        <IconEmail class="size-4 shrink-0"/> jdtomanan@up.edu.ph
+      </a>
+      <a href="tel:+639473013664"
+          class="hoverable-link inline-flex gap-x-2 items-center w-fit">
+        <IconPhone class="size-4 shrink-0"/> +63 947 301 3664
+      </a>
+    </div>
+
+    <div class="flex flex-col gap-y-4 sm:items-end">
+      <div class="inline-flex items-center gap-x-3
+                  *:rounded-lg *:p-1.5 *:text-muted-foreground
                   *:hover:text-foreground *:hover:bg-card
-                  [&>a>*]:size-4 [&>a>*]:my-auto">
-      <a href={link.li} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <FaBrandsLinkedin/>
+                  [&>a>*]:size-4">
+        <a href={link.li} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <FaBrandsLinkedin/>
+        </a>
+        <a href={link.gh} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <FaBrandsGithub/>
+        </a>
+        <a href={link.fb} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <FaBrandsFacebook/>
+        </a>
+        <a href={link.ig} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <FaBrandsInstagram/>
+        </a>
+      </div>
+      <a href="#top" class="hoverable-link text-muted-foreground/75">
+        Back to top
       </a>
-      <a href={link.gh} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <FaBrandsGithub/>
-      </a>
-      <a href={link.fb} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-        <FaBrandsFacebook/>
-      </a>
-      <a href={link.ig} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <FaBrandsInstagram/>
-      </a>
+    </div>
+  </div>
+
+  <div class="w-full border-t border-border/60">
+    <div class="w-full max-w-[960px] mx-auto px-6 py-4">
+      <span class="text-sm text-muted-foreground/50">
+        &copy; {new Date().getFullYear()} Jose Tomanan
+      </span>
     </div>
   </div>
 </footer>
