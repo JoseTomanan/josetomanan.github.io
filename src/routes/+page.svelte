@@ -16,10 +16,6 @@
   import { onMount } from "svelte";
   import { activeSection } from "$lib/utils";
 
-  let scrollY = $state(0);
-  let reducedMotion = $state(false);
-  const parallaxY: number = $derived(reducedMotion ? 0 : scrollY * 0.50);
-
   function updateActiveSection() {
     const threshold = window.innerHeight * 0.40;
     let current: string | null = null;
@@ -30,33 +26,35 @@
     activeSection.set(current);
   }
 
-  onMount(() => {
-    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-    reducedMotion = mq.matches;
-    const onMotionChange = (e: MediaQueryListEvent) => reducedMotion = e.matches;
-    mq.addEventListener('change', onMotionChange);
+  let ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      ticking = false;
+      updateActiveSection();
+    });
+  }
 
-    window.addEventListener('scroll', updateActiveSection, { passive: true });
+  onMount(() => {
+    window.addEventListener('scroll', onScroll, { passive: true });
     updateActiveSection();
     return () => {
-      mq.removeEventListener('change', onMotionChange);
-      window.removeEventListener('scroll', updateActiveSection);
+      window.removeEventListener('scroll', onScroll);
     };
   });
 </script>
 
 
 
-<svelte:window bind:scrollY />
-
 <main class="max-w-[960px] flex flex-col
               gap-y-6 px-2 w-full mx-auto">
   <span class="jumpable" id="top"></span>
-  <div class="page h-[92dvh] border-0 gap-0 overflow-visible"
+  <div class="page h-[92svh] border-0 gap-0 overflow-visible"
           data-section="top"
           transition:fly={{ delay: 100, duration: 1000 }}>
-    <section style="transform: translateY({parallaxY}px);"
-              class="section-body
+    <section class="hero-parallax
+                    section-body
                     bg-transparent pt-16
                     flex flex-col-reverse sm:flex-row
                     justify-center items-center gap-y-8
