@@ -1,18 +1,11 @@
 <script lang="ts">
   import { link } from "$lib";
   import { activeSection } from "$lib/utils";
-
-  let scrollY = $state(0);
-
-  const navTop: number = $derived(Math.max(4, 16 - (scrollY / 80) * 4));
-  const navVerticalPadding: number = $derived(Math.max(0, 4 - (scrollY / 80) * 4));
 </script>
 
 
-<svelte:window bind:scrollY />
-
-<div style="top: {navTop}px;"
-      class="fixed left-1/2 -translate-x-1/2 z-50
+<div class="fixed top-4 left-1/2 -translate-x-1/2 z-50
+          navbar-condense
           flex flex-row items-center gap-x-0.5
           [&>nav]:w-fit
           [&>nav]:bg-card/50 [&>nav]:text-foreground [&>nav]:backdrop-blur-sm
@@ -24,8 +17,8 @@
           [&>nav>*]:py-1.5
         ">
   <nav aria-label="Main navigation"
-        style="padding-block: {navVerticalPadding}px;"
-        class="justify-center gap-10
+        class="navbar-condense-padding py-1
+              justify-center gap-10
               *:hover:text-foreground *:hover:text-shadow-glow
               *:focus-visible:text-foreground *:focus-visible:text-shadow-glow *:focus-visible:underline
             ">
@@ -36,8 +29,8 @@
   </nav>
 
   <nav aria-label="Resume navigation"
-        style="padding-block: {navVerticalPadding}px;"
-        class="justify-center
+        class="navbar-condense-padding py-1
+                justify-center
                 *:hover:text-secondary
                 *:focus-visible:text-secondary *:focus-visible:underline
               ">

@@ -342,4 +342,47 @@ html {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+
+  .hero-parallax,
+  .navbar-condense,
+  .navbar-condense-padding {
+    animation: none;
+  }
+}
+
+
+/* ------------------------- SCROLL-DRIVEN ANIMATIONS ------------------------- */
+@keyframes hero-parallax {
+  from { transform: translateY(0); }
+  to   { transform: translateY(46svh); }
+}
+
+@keyframes navbar-condense {
+  from { transform: translate(-50%, 0); }
+  to   { transform: translate(-50%, -12px); }
+}
+
+@keyframes navbar-condense-padding {
+  from { padding-block: 4px; }
+  to   { padding-block: 0px; }
+}
+
+@supports (animation-timeline: scroll()) {
+  .hero-parallax {
+    animation: hero-parallax linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 92svh;
+  }
+
+  .navbar-condense {
+    animation: navbar-condense linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 240px;
+  }
+
+  .navbar-condense-padding {
+    animation: navbar-condense-padding linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 80px;
+  }
 }
