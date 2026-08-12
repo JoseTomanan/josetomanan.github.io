@@ -35,6 +35,10 @@
 		"vite": "^6.0.0"
 	},
 	"type": "module",
+	"overrides": {
+		"cookie": "^0.7.2",
+		"sharp": "^0.35.3"
+	},
 	"dependencies": {
 		"@tailwindcss/postcss": "^4.2.2",
 		"clsx": "^2.1.1",
