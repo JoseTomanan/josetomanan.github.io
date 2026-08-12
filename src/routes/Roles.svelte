@@ -17,17 +17,15 @@
     <h2>My roles</h2>
     <Accordion.Root type="single" class="projects-roles" bind:value={openValue}>
       <Article
-						id="role-oldst"
-						title="Full-stack Software Development Intern"
-						subtitle="Old St. Labs"
+						id="role-metr"
+						title="Backend Developer"
+						subtitle="Metro East Technology Resources, Inc."
 						href={defaultLink}
-						date="JUN 2026 - PRESENT"
+						date="AUG 2026 - PRESENT"
 						other="
-								Taking part in a TypeScript-first software development internship.
-                Learning and applying clean architecture principle and modularized development.
-                Creating a culminating project that uses React, NestJS, and TailwindCSS to build a web application.
+								// Content pending.
               "
-						techInvolved={ ["simple-icons:TypeScript", "simple-icons:React", "simple-icons:NestJS", "simple-icons:TailwindCSS"] }
+						techInvolved={ ["simple-icons:Go"] }
 						{openValue}
 					/>
       <Article
