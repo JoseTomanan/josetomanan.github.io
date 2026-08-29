@@ -17,17 +17,15 @@
     <h2>My roles</h2>
     <Accordion.Root type="single" class="projects-roles" bind:value={openValue}>
       <Article
-						id="role-oldst"
-						title="Full-stack Software Development Intern"
-						subtitle="Old St. Labs"
+						id="role-metr"
+						title="Backend software engineer"
+						subtitle="Metro East Technology Resources, Inc."
 						href={defaultLink}
-						date="JUN 2026 - PRESENT"
+						date="AUG 2026 - PRESENT"
 						other="
-								Taking part in a TypeScript-first software development internship.
-                Learning and applying clean architecture principle and modularized development.
-                Creating a culminating project that uses React, NestJS, and TailwindCSS to build a web application.
-              "
-						techInvolved={ ["simple-icons:TypeScript", "simple-icons:React", "simple-icons:NestJS", "simple-icons:TailwindCSS"] }
+							Using GoLang to build and maintain a microservices-based backend.
+							Focuses on concurrency and resolving race conditions; maintains Docker containers and CI pipelines."
+						techInvolved={ ["simple-icons:Go", "simple-icons:Docker", "simple-icons:Bash"] }
 						{openValue}
 					/>
       <Article
@@ -55,7 +53,7 @@
 					/>
       <Article
 						id="role-csi"
-						title="Web development module writer"
+						title="Web Development Module Writer"
 						subtitle="UP Center for Student Innovations (UP CSI)"
 						href={defaultLink}
 						date="SEP 2023 - NOV 2023"

@@ -99,9 +99,10 @@
     <section class="section-body gap-4 rounded-b-none border-b border-border">
       <h2>About me</h2>
       <h4>
-        Hello! I am Jose, a <span class="non-link-highlight">BS CS graduate from UP Diliman</span> and an AI-proficient full-stack developer, comfortable on both ends &mdash; clean UIs with Svelte5 &amp; React, bugless APIs with FastAPI &amp; Spring Boot.
-        I graduated in July 2026 with Cum Laude honors, and am committed to my craft: I am detail-driven, and I write code that is
-        <span class="non-link-highlight">as thoughtful as it is functional.</span>
+        Hello! I am Jose, a <span class="non-link-highlight">BS CS graduate from UP Diliman</span> and an AI-proficient full-stack developer, comfortable on both ends &mdash; clean UIs with Svelte5 &amp; React, bugless APIs with FastAPI &amp; GoLang.
+        I graduated in July 2026 with Cum Laude honors, and am currently working as a Backend Software Engineer at Metro East Technology Resources, Inc.
+        I am passionate about building software that is
+        <span class="non-link-highlight">as elegant and beautiful, as it is efficient and functional</span>.
       </h4>
     </section>
     
@@ -112,7 +113,7 @@
         running, lifting, basketball.
         I am also an 
         <a href={link.ig_swiftie} class="hoverable-link" target="_blank" rel="noopener noreferrer">avid Swiftie</a>: 
-        I'd bet my left leg I know more about Taylor Swift than you!
+        I'd bet my right leg I know more about Taylor Swift than you!
       </h4>
     </section>
   </div>
