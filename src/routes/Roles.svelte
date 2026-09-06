@@ -18,7 +18,7 @@
     <Accordion.Root type="single" class="projects-roles" bind:value={openValue}>
       <Article
 						id="role-metr"
-						title="Backend Engineer"
+						title="Software Engineer"
 						subtitle="Metro East Technology Resources, Inc."
 						href={defaultLink}
 						date="AUG 2026 - PRESENT"
@@ -30,7 +30,7 @@
 					/>
       <Article
 						id="role-195"
-						title="Software Engineer Intern"
+						title="Backend Developer Intern"
 						subtitle="Pointwest Innovations Corporation"
 						href={defaultLink}
 						date="JUN 2025 - JUL 2025"
