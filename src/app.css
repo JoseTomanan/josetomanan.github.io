@@ -231,7 +231,7 @@ html {
   }
   
   .non-link-highlight {
-    font-weight: 500;
+    font-weight: 400;
     color: var(--color-foreground);
   
     &:hover {
@@ -243,7 +243,8 @@ html {
 
 /* ------------------------- UTILITIES ------------------------- */
 @utility hoverable-link {
-  text-decoration-line: underline;
+  font-weight: 600;
+  color: var(--color-foreground);
   text-underline-offset: 2px;
 
   span&:hover {

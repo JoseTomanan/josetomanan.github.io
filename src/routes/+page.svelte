@@ -100,18 +100,20 @@
         Hello! I am Jose, a <span class="non-link-highlight">BS CS graduate from UP Diliman</span> and an AI-proficient full-stack developer, comfortable on both ends &mdash; clean UIs with Svelte5 &amp; React, bugless APIs with FastAPI &amp; GoLang.
         I graduated in July 2026 with Cum Laude honors, and am currently working as a Backend Software Engineer at Metro East Technology Resources, Inc.
         I am passionate about building software that is
-        <span class="non-link-highlight">as elegant and beautiful, as it is efficient and functional</span>.
+        <span class="non-link-highlight">as elegant as it is functional</span>.
       </h4>
     </section>
     
     <section class="section-body gap-2 rounded-t-none">
       <h4>
         Off the clock, I play competitive FPS (Valorant, CS2), and
-        <span class="non-link-highlight">physical activity:</span>
-        running, lifting, basketball.
-        I am also an 
-        <a href={link.ig_swiftie} class="hoverable-link" target="_blank" rel="noopener noreferrer">avid Swiftie</a>: 
-        I'd bet my right leg I know more about Taylor Swift than you!
+        physical activity: running, lifting, basketball.
+        I am also developing a
+        <a href={link.gh_hooper_game} class="hoverable-link" target="_blank" rel="noopener noreferrer">
+          duel-style basketball game in Godot/C#
+        </a>
+        primarily only using AI.
+        Prototype coming soon!
       </h4>
     </section>
   </div>

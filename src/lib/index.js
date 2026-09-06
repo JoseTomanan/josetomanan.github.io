@@ -1,6 +1,7 @@
 export const link = {
     li: "https://www.linkedin.com/in/jedtomanan/",
     gh: "https://github.com/JoseTomanan",
+    gh_hooper_game: "https://github.com/JoseTomanan/hooper-game",
     fb: "https://www.facebook.com/jedtomanan/",
     ig: "https://www.instagram.com/josetmnn/",
     ig_swiftie: "https://www.instagram.com/p/B6p4rR_hoUC/",
