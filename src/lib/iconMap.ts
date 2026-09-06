@@ -10,6 +10,9 @@ import AxiosIcon from '~icons/simple-icons/axios';
 import PostCSSIcon from '~icons/simple-icons/postcss';
 import PythonIcon from '~icons/simple-icons/python';
 import GoIcon from '~icons/simple-icons/go';
+import DockerIcon from '~icons/simple-icons/docker';
+import MySQLIcon from '~icons/simple-icons/mysql';
+import BashIcon from '~icons/simple-icons/gnubash';
 import SpringIcon from '~icons/simple-icons/spring';
 import GitIcon from '~icons/simple-icons/git';
 import JiraIcon from '~icons/simple-icons/jira';
@@ -30,6 +33,9 @@ export const iconMap: Record<string, Component> = {
   'simple-icons:postcss': PostCSSIcon,
   'simple-icons:python': PythonIcon,
   'simple-icons:go': GoIcon,
+  'simple-icons:docker': DockerIcon,
+  'simple-icons:mysql': MySQLIcon,
+  'simple-icons:bash': BashIcon,
   'simple-icons:spring': SpringIcon,
   'simple-icons:git': GitIcon,
   'simple-icons:jira': JiraIcon,

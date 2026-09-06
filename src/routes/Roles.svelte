@@ -18,14 +18,14 @@
     <Accordion.Root type="single" class="projects-roles" bind:value={openValue}>
       <Article
 						id="role-metr"
-						title="Backend Developer"
+						title="Backend Engineer"
 						subtitle="Metro East Technology Resources, Inc."
 						href={defaultLink}
 						date="AUG 2026 - PRESENT"
 						other="
-								// Content pending.
-              "
-						techInvolved={ ["simple-icons:Go"] }
+							Using GoLang to build and maintain a microservices-based backend.
+							Focuses on concurrency and resolving race conditions; maintains Docker containers and CI pipelines."
+						techInvolved={ ["simple-icons:Go", "simple-icons:Docker", "simple-icons:Bash"] }
 						{openValue}
 					/>
       <Article
@@ -53,7 +53,7 @@
 					/>
       <Article
 						id="role-csi"
-						title="Web development module writer"
+						title="Web Development Module Writer"
 						subtitle="UP Center for Student Innovations (UP CSI)"
 						href={defaultLink}
 						date="SEP 2023 - NOV 2023"
