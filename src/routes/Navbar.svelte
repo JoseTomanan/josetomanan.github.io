@@ -4,7 +4,7 @@
 </script>
 
 
-<div class="fixed top-4 left-1/2 -translate-x-1/2 z-50
+<div class="fixed top-4 left-1/2 z-50
           navbar-condense
           flex flex-row items-center gap-x-0.5
           [&>nav]:w-fit
