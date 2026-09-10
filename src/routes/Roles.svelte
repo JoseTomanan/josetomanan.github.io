@@ -1,22 +1,22 @@
 <script lang='ts'>
-  import Article from "$lib/components/Article.svelte";
-  import * as Accordion from "$lib/components/ui/accordion/index";
-  import { fly } from "svelte/transition";
-  import { activeSection } from "$lib/utils";
+	import Article from "$lib/components/Article.svelte";
+	import * as Accordion from "$lib/components/ui/accordion/index";
+	import { fly } from "svelte/transition";
+	import { activeSection } from "$lib/utils";
 
-  const defaultLink = "https://www.linkedin.com/in/jedtomanan/details/experience/"
-  let openValue = $state<string | undefined>(undefined);
+	const defaultLink = "https://www.linkedin.com/in/jedtomanan/details/experience/"
+	let openValue = $state<string | undefined>(undefined);
 </script>
 
 <span class="jumpable" id="roles"></span>
 <div class="page"
-      data-section="roles"
-      transition:fly={{ delay: 200, duration: 1000 }}
-      class:section-active={$activeSection === 'roles'}>
-  <section class="section-body">
-    <h2>My roles</h2>
-    <Accordion.Root type="single" class="projects-roles" bind:value={openValue}>
-      <Article
+			data-section="roles"
+			transition:fly={{ delay: 200, duration: 1000 }}
+			class:section-active={$activeSection === 'roles'}>
+	<section class="section-body">
+		<h2>My roles</h2>
+		<Accordion.Root type="single" class="projects-roles" bind:value={openValue}>
+			<Article
 						id="role-metr"
 						title="Software Engineer"
 						subtitle="Metro East Technology Resources, Inc."
@@ -28,7 +28,7 @@
 						techInvolved={ ["simple-icons:Go", "simple-icons:Docker", "simple-icons:Bash"] }
 						{openValue}
 					/>
-      <Article
+			<Article
 						id="role-195"
 						title="Backend Developer Intern"
 						subtitle="Pointwest Innovations Corporation"
@@ -39,7 +39,7 @@
 						techInvolved={ ["simple-icons:Spring", "simple-icons:Git", "simple-icons:Jira"] }
 						{openValue}
 					/>
-      <Article
+			<Article
 						id="role-cursor1"
 						title="Event Co-Head"
 						subtitle="UP Association of Computer Science Majors (UP CURSOR)"
@@ -51,7 +51,7 @@
 						techInvolved={ ["simple-icons:Notion", "simple-icons:Asana", "simple-icons:GoogleSheets", "simple-icons:Canva"] }
 						{openValue}
 					/>
-      <Article
+			<Article
 						id="role-csi"
 						title="Web Development Module Writer"
 						subtitle="UP Center for Student Innovations (UP CSI)"
@@ -62,7 +62,7 @@
 						techInvolved={ ["simple-icons:Typst", "simple-icons:Git"] }
 						{openValue}
 					/>
-      <Article
+			<Article
 						id="role-cursor2"
 						title="Member Relations Head"
 						subtitle="UP CURSOR"
@@ -73,11 +73,11 @@
 						techInvolved={ ["simple-icons:Notion"] }
 						{openValue}
 					/>
-    </Accordion.Root>
-    
-    <h6 class="footnote">
-      See more of what I've done at
-      <a href={defaultLink} target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-    </h6>
-  </section>
+		</Accordion.Root>
+		
+		<h6 class="footnote">
+			See more of what I've done at
+			<a href={defaultLink} target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+		</h6>
+	</section>
 </div>

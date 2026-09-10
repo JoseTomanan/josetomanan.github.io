@@ -129,12 +129,14 @@ html {
 
 	h4 {
 		@apply text-lg md:text-xl;
+    font-weight: 350;
 		font-family: var(--font-sans);
 		color: var(--color-muted-foreground);
 	}
 
 	h5 {
 		@apply text-base md:text-lg;
+    font-weight: 350;
 		font-family: var(--font-sans);
 		color: var(--color-muted-foreground);
 	}

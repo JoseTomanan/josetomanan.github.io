@@ -88,7 +88,7 @@
                   class="w-4 h-4 opacity-0 group-hover/whole:opacity-100 group-data-[open=true]/whole:opacity-100 hidden md:inline"/>
             </a>
           </h4>
-          <h4 class="leading-4 mt-0 font-light
+          <h4 class="leading-4 mt-0 font-[350]
                       text-foreground/60
                       group-hover/whole:text-foreground/80
                       group-data-[open=true]/whole:text-foreground/80">
@@ -100,7 +100,7 @@
 
     <Accordion.Content class="flex flex-row gap-x-4 px-4">
       <div class="hidden md:block md:basis-1/3 lg:basis-[24%] shrink-0"></div>
-      <span class="leading-5 text-lg font-normal text-muted-foreground/60">
+      <span class="leading-5 text-lg font-[350] text-muted-foreground/60">
         {other}
       </span>
     </Accordion.Content>
