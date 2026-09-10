@@ -16,28 +16,16 @@
   <section class="section-body">
     <h2>My projects</h2>
     <Accordion.Root type="single" class="projects-roles" bind:value={openValue}>
-      <Article title="SIPAT.MATH"
-						id="proj-199"
-						href="https://github.com/JoseTomanan/S3LAB-ai-grading"
-						subtitle="LLM-powered grading tool for early Mathematics"
-						date="SEP 2025 - PRESENT"
-						other="
-								2-man capstone: VLM-based tool automating assessment of early-level Math using rubrics and answer keys.
-                Python + Gemini API prototype; leading frontend in Svelte and Shadcn.
-                CS199 final project."
-						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:FastAPI", "simple-icons:SQLite"] }
-						{openValue}
-					/>
       <Article title="I/O MONEY"
 						id="proj-finances"
 						href="https://josetomanan.github.io/money-sheet-monorepo"
 						subtitle="Frontend interface for Google Sheets"
 						date="FEB 2023 - PRESENT"
 						other="
-								Built a frontend that integrates with Google Apps Script API to read and write to a personal finance spreadsheet.
-                Uses Google Sheets as a database and interface for data entry, and the frontend for visualization and mobile interaction.
-                Mobile-responsive, offline-friendly with caching and sync when online; exportable as a web app.
-                Ongoing project for personal use and learning.
+                Web app integrated with Apps Script API to write into personal finance spreadsheet.
+                Uses Google Sheets as database.
+                Mobile-responsive and offline-friendly.
+                Ongoing project.
 							"
 						techInvolved={ ["simple-icons:GoogleAppsScript", "simple-icons:Svelte"] }
 					/>
@@ -52,6 +40,19 @@
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TypeScript", "simple-icons:TailwindCSS"] }
 						{openValue}
 					/>
+      <Article title="SIPAT.MATH"
+						id="proj-199"
+						href="https://github.com/JoseTomanan/S3LAB-ai-grading"
+						subtitle="LLM-powered Mathematics grading tool"
+						date="SEP 2025 - MAY 2026"
+						other="
+								2-man capstone: VLM-based tool automating assessment of early-level Math using rubrics and answer keys.
+                Python + Gemini API prototype; leading frontend in Svelte and Shadcn.
+                CS199 final project."
+						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:FastAPI", "simple-icons:SQLite"] }
+						{openValue}
+					/>
+      <!--
       <Article title="JoseTomanan.io"
 						id="proj-portfolio"
 						href="https://github.com/JoseTomanan/portfolio"
@@ -64,6 +65,7 @@
 						techInvolved={ ["simple-icons:Svelte", "simple-icons:TailwindCSS", "simple-icons:PostCSS"] }
 						{openValue}
 					/>
+      -->
       <Article title="Potterdex"
 						id="proj-potterdex"
 						href="https://potterdex.vercel.app"
