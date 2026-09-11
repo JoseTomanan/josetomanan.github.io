@@ -55,29 +55,28 @@
           transition:fly={{ delay: 100, duration: 1000 }}>
     <section class="hero-parallax
                     section-body
-                    bg-transparent pt-16
+                    bg-transparent pt-12
                     flex flex-col-reverse sm:flex-row
                     justify-center items-center gap-y-8
                   ">
-      <div class="flex flex-col items-center gap-y-10
-                  sm:flex-1 sm:items-start sm:gap-y-20
+      <div class="flex flex-col items-center gap-y-8
+                  sm:flex-1 sm:items-start sm:gap-y-16
                   *:text-center *:sm:text-left">
-        <div class="space-y-6 sm:space-y-10">
-          <h1 class="font-extrabold">Jose Tomanan</h1>
-          <h2 class="flex flex-col font-heading font-semibold text-muted-foreground tracking-tight">
-            <span>Tech enthusiast</span>
-            <span>Fitness junkie</span>
-            <span class="magic-text">Full-stack web developer</span>
-          </h2>
-        </div>
+        <h1 class="font-bold magic-text">Jose Tomanan</h1>
+        <h2 class="flex flex-col font-heading font-medium text-muted-foreground tracking-tight">
+          <span class="text-foreground font-semibold">
+            Full-stack web developer
+          </span>
+          proficient in AI &amp; writing scalable code
+        </h2>
         <a href={link.li} target="_blank" rel="noopener noreferrer"
             class="group inline-flex items-center
-                  bg-transparent text-foreground
-                  font-heading text-xl font-semibold
+                  bg-foreground text-background
+                  font-heading text-2xl font-semibold
                   gap-x-4 py-4 px-6 -ml-1.5
                   rounded-3xl
-                  ring-2 ring-foreground hover:ring-primary
-                  hover:bg-primary hover:text-primary-foreground
+                  ring-3 ring-foreground
+                  hover:bg-white
                 ">
           <span>Connect with me</span>
           <IconArrow class="size-5 group-hover:-rotate-45
@@ -97,10 +96,10 @@
     <section class="section-body gap-4 rounded-b-none border-b border-border">
       <h2>About me</h2>
       <h4>
-        Hello! I am Jose, a <span class="non-link-highlight">BS CS graduate from UP Diliman</span> and an AI-proficient full-stack developer, comfortable on both ends &mdash; clean UIs with Svelte5 &amp; React, bugless APIs with FastAPI &amp; GoLang.
+        Hello! I am Jose, a <span class="non-link-highlight">BS CS graduate from UP Diliman</span> and an AI-proficient full-stack web developer.
         I graduated in July 2026 with Cum Laude honors, and am currently working as a Backend Software Engineer at Metro East Technology Resources, Inc.
         I am passionate about building software that is
-        <span class="non-link-highlight">as elegant as it is functional</span>.
+        <span class="non-link-highlight">equally elegant &amp; functional</span>.
       </h4>
     </section>
     
