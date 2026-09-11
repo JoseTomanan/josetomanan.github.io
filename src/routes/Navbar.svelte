@@ -31,8 +31,8 @@
   <nav aria-label="Resume navigation"
         class="navbar-condense-padding py-1
                 justify-center
-                *:hover:text-secondary
-                *:focus-visible:text-secondary *:focus-visible:underline
+                *:hover:text-primary
+                *:focus-visible:text-primary *:focus-visible:underline
               ">
     <a id="clickable-resume"
         href={link.resume}
