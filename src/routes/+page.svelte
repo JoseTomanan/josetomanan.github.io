@@ -55,31 +55,34 @@
           transition:fly={{ delay: 100, duration: 1000 }}>
     <section class="hero-parallax
                     section-body
-                    bg-transparent pt-12
+                    bg-transparent pt-16
                     flex flex-col-reverse sm:flex-row
                     justify-center items-center gap-y-8
                   ">
       <div class="flex flex-col items-center gap-y-8
-                  sm:flex-1 sm:items-start sm:gap-y-16
+                  sm:flex-1 sm:items-start sm:gap-y-12
                   *:text-center *:sm:text-left">
-        <h1 class="font-bold magic-text">Jose Tomanan</h1>
-        <h2 class="flex flex-col font-heading font-medium text-muted-foreground tracking-tight">
-          <span class="text-foreground font-semibold">
-            Full-stack web developer
-          </span>
-          proficient in AI &amp; writing scalable code
-        </h2>
+        <div class="space-y-4 md:space-y-8">
+          <h1 class="font-bold magic-text">Jose Tomanan</h1>
+          <h2 class="flex flex-col font-heading font-medium text-muted-foreground
+                      tracking-tight leading-6 md:leading-none">
+            <span class="text-foreground font-semibold">
+              Full-stack web developer
+            </span>
+            proficient in AI &amp; writing scalable code
+          </h2>
+        </div>
         <a href={link.li} target="_blank" rel="noopener noreferrer"
             class="group inline-flex items-center
-                  bg-foreground text-background
+                  bg-transparent text-primary
                   font-heading text-2xl font-semibold
                   gap-x-4 py-4 px-6 -ml-1.5
                   rounded-3xl
-                  ring-3 ring-foreground
-                  hover:bg-white
+                  ring-2 ring-primary
+                  hover:text-background hover:bg-primary
                 ">
-          <span>Connect with me</span>
-          <IconArrow class="size-5 group-hover:-rotate-45
+          <h3 class="text-inherit">Connect with me</h3>
+          <IconArrow class="size-6 group-hover:-rotate-45
                             transition-transform duration-200"/>
         </a>
       </div>
